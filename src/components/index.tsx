@@ -1,5 +1,9 @@
+import { MainContainer } from "./styles"
+
 export const Main = () => {
     return (
-        <h1>Hello</h1>
+        <MainContainer>
+            
+        </MainContainer>
     )
 }
