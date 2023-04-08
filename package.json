@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "eslint": "eslint src",
-    "test": "jest"
+    "test": "jest",
+    "coverage": "jest --coverage"
   },
   "lintsaged": {
     "src/**/*": [
@@ -22,11 +23,13 @@
     "eslint-config-prettier": "^8.8.0",
     "next": "13.3.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react-dom": "^18.2.0",
     "typescript": "5.0.4"
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.21.4",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
     "@types/jest": "^29.5.0",
     "@typescript-eslint/eslint-plugin": "^5.57.1",
     "eslint": "8.38.0",
