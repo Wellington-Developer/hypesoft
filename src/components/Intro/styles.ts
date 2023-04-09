@@ -7,7 +7,7 @@ export const IntroContainer = styled.div`
     height: 100vh;
 
     display: grid;
-    grid-template-columns: 110px 1fr 1fr 1fr;
+    grid-template-columns: 120px 1fr 1fr 1fr;
     
     .left-side {
         grid-row: 1;
@@ -66,14 +66,22 @@ export const IntroContainer = styled.div`
         width: 100%;
         max-width: 870px;
         justify-self: end;
-    }
+        height: 100vh;
 
-    @media screen and (max-width: 1555px) {
-        .left-side {
-            grid-column: 1 / 5
+        img {
+            height: 100%;
         }
     }
 
+    @media screen and (max-width: 1555px) {
+        grid-template-columns: 120px 1fr 1fr 1fr;
+        max-width: 1320px;
+
+        .left-side {
+            grid-column: 1 / 5;
+        }
+    }
+    
     @media screen and (max-width: 1400px) {
         .left-side {
             .buttons {
