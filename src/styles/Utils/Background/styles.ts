@@ -9,8 +9,11 @@ export const BgContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr 896px 425px 1fr;
     transition: all 3s ease-in-out;
+    z-index: -1;
+    margin-top: 10px;
     
     .box {
+        height: calc(96px + 100vh);
         grid-row: 1;
         grid-column: 3 / 5;
         background: var(--color-bg-header);

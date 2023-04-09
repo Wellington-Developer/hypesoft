@@ -37,6 +37,7 @@ const GlobalStyles = createGlobalStyle`
         display: block;
         height: auto;
     }
+
 `;
 
 export default GlobalStyles
