@@ -36,6 +36,12 @@ export const IntroContainer = styled.div`
             padding-bottom: 32px;
             max-width: 673px;
         }
+
+        .buttons {
+            display: flex;
+            gap: 16px;
+            padding-bottom: 202px;
+        }
     }
     
     .right-side {

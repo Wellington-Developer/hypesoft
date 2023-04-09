@@ -10,5 +10,10 @@ export const Button = styled.a<ButtonProps >`
     padding: 0 32px;
     color: ${props => props.primary ? 'var(--color-white)': 'var(--color-primary)'};
     border-radius: 5px;
-    background: ${props => props.primary ? 'var(--color-purple)' : 'var(--color-white)'}
+    background: ${props => props.primary ? 'var(--color-purple)' : 'var(--color-white)'};
+    transition: all 0.3s ease-in-out;
+
+    :hover {
+        opacity: 0.8;
+    }
 `;
