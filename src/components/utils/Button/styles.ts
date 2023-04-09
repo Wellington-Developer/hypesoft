@@ -15,5 +15,6 @@ export const Button = styled.a<ButtonProps >`
 
     :hover {
         opacity: 0.8;
+        cursor: pointer;
     }
 `;
