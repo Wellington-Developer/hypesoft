@@ -3,6 +3,7 @@ import { Header } from "./Header"
 import { MainContainer } from "./styles"
 import { Intro } from "./Intro"
 import { About } from "./About"
+import { Service } from "./Service"
 
 export const Main = () => {
     return (
@@ -11,6 +12,7 @@ export const Main = () => {
                 <Header />
                 <Intro />
                 <About />
+                <Service />
         </MainContainer>
     )
 }
