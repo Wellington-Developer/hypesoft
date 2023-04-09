@@ -3,13 +3,13 @@ import styled from 'styled-components';
 export const BoxWorkContainer = styled.div`
     width: 100%;
     background: var(--color-white);
-    border-radius: 5px;
+    border-radius: 7px;
     cursor: pointer;
 
     .img-work {
         height: 332px;
         width: 100%;
-        border: 1px solid red;
+        background: black;
         border-radius: 6px 6px 0 0;
     }
 
