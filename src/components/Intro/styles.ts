@@ -129,6 +129,7 @@ export const IntroContainer = styled.div`
             max-width: 170px;
             height: 170px;
             justify-self: start;
+            align-self: end;
             border-radius: 20px;
 
             img {
