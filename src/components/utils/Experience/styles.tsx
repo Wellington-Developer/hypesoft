@@ -11,6 +11,7 @@ export const ExperienceData = styled.div `
         color: var(--color-pink);
         font-weight: 400;
     }
+
     
     h3 {
         display: flex;
@@ -18,5 +19,15 @@ export const ExperienceData = styled.div `
         line-height: 28px;
         color: var(--color-white);
         font-weight: 400;
+    }
+
+    @media screen and (max-width: 1200px) {
+        h2 {
+            font-size: 4.0rem;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+        }
     }
 `
