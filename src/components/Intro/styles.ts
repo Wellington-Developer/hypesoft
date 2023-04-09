@@ -51,4 +51,10 @@ export const IntroContainer = styled.div`
         max-width: 870px;
         justify-self: end;
     }
+
+    @media screen and (max-width: 1340px) {
+        .left-side {
+            grid-column: 1 / 5
+        }
+    }
 `;
