@@ -27,7 +27,7 @@ export const Box = styled.div`
             line-height: 40px;
             font-weight: 400;
             color: var(--color-bg);
-            max-width: 80%;
+            max-width: 70%;
             position: relative;
             margin-bottom: 50px;
             
