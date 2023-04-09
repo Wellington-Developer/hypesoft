@@ -4,6 +4,7 @@ import { IntroContainer } from "./styles"
 // Assets
 import imgPerson from '../../../public/assets/images/me.png';
 import { Button } from "../utils/Button/styles";
+import { SocialMedia } from "../utils/SocialMedia/styles";
 
 export const Intro = () => {
     return (
@@ -14,6 +15,16 @@ export const Intro = () => {
                 <div className="buttons">
                     <Button href="#contact" primary>Hire me</Button>
                     <Button href="#work">View work</Button>
+                </div>
+
+                <div className="social-container">
+                    <p>Follow me on</p>
+                    <div className="social">
+                        <SocialMedia href="#link"/>
+                        <SocialMedia href="#link"/>
+                        <SocialMedia href="#link"/>
+                        <SocialMedia href="#link"/>
+                    </div>
                 </div>
             </div>
             <div className="right-side">
