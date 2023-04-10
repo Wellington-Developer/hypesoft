@@ -1,10 +1,13 @@
 import { ExperienceData } from "../utils/Experience/styles"
-import { AboutContainer } from "./styles"
 import Image from "next/image";
+
+// Styles
+import { Button } from "../utils/Button/styles";
+import { AboutContainer } from "./styles"
 
 // Assets
 import aboutImg from '../../../public/assets/images/about.png';
-import { Button } from "../utils/Button/styles";
+import arrowRightImg from '../../../public/assets/icons/arrowRight.svg';
 
 export const About = () => {
     return (
@@ -26,7 +29,7 @@ export const About = () => {
                         <h3>Completed projects</h3>
                     </ExperienceData>
                 </div>
-                <Button primary>Say hi</Button>
+                <Button primary href="#contact">Say hi <Image src={ arrowRightImg } alt="icon arrow"/></Button>
             </div>
         </AboutContainer>
     )

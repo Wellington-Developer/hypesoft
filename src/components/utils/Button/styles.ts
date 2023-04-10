@@ -17,4 +17,9 @@ export const Button = styled.a<ButtonProps >`
         opacity: 0.8;
         cursor: pointer;
     }
+
+    img {
+        display: inline-block;
+        padding-left: 8px;
+    }
 `;
