@@ -5,13 +5,11 @@ import { EventType } from "@testing-library/react"
 import { TestimonialsProps } from "@/../types/components/data/testimonials"
 
 export const Testimonial = () => {
-
-    const [ testimonials, setTestimonials ] = useState([])
-    const [ indexTestimonial, setIndexTestimonial ] = useState('')
+    const [ testimonials, setTestimonials ] = useState<TestimonialsProps[]>([])
 
     const fetchTestimonials = async () => {
         const res = await fetch('/api/testimonials')
-        const testimonials: TestimonialsProps[] | any = await res.json()
+        const testimonials = await res.json()
 
         setTestimonials(testimonials)
         console.log(testimonials)
