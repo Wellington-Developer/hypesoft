@@ -4,7 +4,7 @@ import { ServiceContainer } from "./styles"
 
 export const Service = () => {
     return (
-        <ServiceContainer className="container-default">
+        <ServiceContainer className="container-default" id="services">
             <TitleCenter>
                 <h1>My Services</h1>
             </TitleCenter>

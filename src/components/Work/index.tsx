@@ -4,7 +4,7 @@ import { WorkContainer } from "./styles"
 
 export const Work = () => {
     return (
-        <WorkContainer className="container-default">
+        <WorkContainer className="container-default" id="works">
             <TitleCenter>
                 <h1>My Selected Work</h1>
             </TitleCenter>

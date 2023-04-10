@@ -8,7 +8,7 @@ import { Button } from "../utils/Button/styles";
 
 export const About = () => {
     return (
-        <AboutContainer className="container-default">
+        <AboutContainer className="container-default" id="about">
             <div className="left-side">
                 <Image src={ aboutImg } alt="about image" />
             </div>

@@ -41,6 +41,7 @@ export const HeaderContainer = styled.header`
             
             a {
                 color: var(--color-white);
+                cursor: pointer;
                 
                 :hover {
                     opacity: 0.8;
