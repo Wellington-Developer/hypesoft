@@ -5,6 +5,7 @@ import { Intro } from "./Intro"
 import { About } from "./About"
 import { Service } from "./Service"
 import { Work } from "./Work"
+import { Companies } from "./Companies"
 
 export const Main = () => {
     return (
@@ -15,6 +16,7 @@ export const Main = () => {
                 <About />
                 <Service />
                 <Work />
+                <Companies />
         </MainContainer>
     )
 }
