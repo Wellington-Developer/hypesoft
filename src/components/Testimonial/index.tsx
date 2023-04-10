@@ -6,7 +6,8 @@ import { TestimonialsProps } from "@/../types/components/data/testimonials"
 
 export const Testimonial = () => {
     const [ testimonials, setTestimonials ] = useState<TestimonialsProps[]>([])
-
+    const [ filteredTestimonial, setFilteredTestimonial ] = useState<TestimonialsProps>()
+    
     const fetchTestimonials = async () => {
         const res = await fetch('/api/testimonials')
         const testimonials = await res.json()
@@ -14,6 +15,13 @@ export const Testimonial = () => {
         setTestimonials(testimonials)
         console.log(testimonials)
     }
+
+    const getStateId = (id: number) => {
+        console.log(id)
+        setFilteredTestimonial(testimonials[id])
+    }
+
+    console.log(filteredTestimonial)
 
 
     useEffect(() => {
@@ -30,7 +38,7 @@ export const Testimonial = () => {
                     {
                         testimonials.map((testimonial, index) => {
                             return (
-                                <div className="person" key={index}>
+                                <div className="person" key={index} onClick={ () => getStateId(index) }>
                                     <div className="profile"></div>
                                     <div className="info">
                                         <h1>{testimonial.name}</h1>
@@ -41,10 +49,18 @@ export const Testimonial = () => {
                         })
                     }
                 </div>
-                <div className="testimonial">
-                    <h4 id="#rating">5.0</h4>
-                    <h3>Comentário</h3>
-                </div>
+                {
+                    filteredTestimonial ? (
+                        <div className="testimonial">
+                            <h4 id="#rating">{filteredTestimonial.rate}</h4>
+                            <h3>{filteredTestimonial.comment}</h3>
+                        </div>
+                    ) : (
+                        <div className="testimonial">
+                            <h1>Clique para ver os comentários.</h1>
+                        </div>
+                    )
+                }
 
             </div>
         </TestimonialContainer>
