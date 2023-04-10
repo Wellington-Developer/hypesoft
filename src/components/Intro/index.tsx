@@ -1,10 +1,13 @@
 import Image from "next/image"
 import { IntroContainer } from "./styles"
 
-// Assets
-import imgPerson from '../../../public/assets/images/me.png';
+// Styles
 import { Button } from "../utils/Button/styles";
 import { SocialMedia } from "../utils/SocialMedia/styles";
+
+// Assets
+import imgPerson from '../../../public/assets/images/me.png';
+import { AiFillGithub, AiFillLinkedin, AiOutlineDribbble, AiOutlineBehance } from 'react-icons/ai'
 
 export const Intro = () => {
     return (
@@ -20,10 +23,18 @@ export const Intro = () => {
                 <div className="social-container">
                     <p>Follow me on</p>
                     <div className="social">
-                        <SocialMedia href="#link"/>
-                        <SocialMedia href="#link"/>
-                        <SocialMedia href="#link"/>
-                        <SocialMedia href="#link"/>
+                        <SocialMedia href="https://dribbble.com/">
+                            <AiOutlineDribbble size={ 48 } color="#242424" />
+                        </SocialMedia>
+                        <SocialMedia href="https://www.behance.net/">
+                            <AiOutlineBehance size={ 48 } color="#242424" />
+                        </SocialMedia>
+                        <SocialMedia href="https://github.com/Wellington-Developer">
+                            <AiFillGithub size={ 48 } color="#242424" className="icon"/>
+                        </SocialMedia>
+                        <SocialMedia href="https://www.linkedin.com/in/wellington-santos-6a2670214/">
+                            <AiFillLinkedin size={ 48 } color="#242424" />
+                        </SocialMedia>
                     </div>
                 </div>
             </div>

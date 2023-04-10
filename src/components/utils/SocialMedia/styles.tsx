@@ -8,6 +8,9 @@ export const SocialMedia = styled.a`
     width: 100%;
     max-width: 48px;
     height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
 
     :hover {
