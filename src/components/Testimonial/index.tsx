@@ -15,15 +15,12 @@ export const Testimonial = () => {
         const testimonials = await res.json()
 
         setTestimonials(testimonials)
-        console.log(testimonials)
     }
 
     const getStateId = (id: number) => {
         console.log(id)
         setFilteredTestimonial(testimonials[id])
     }
-
-    console.log(filteredTestimonial)
 
 
     useEffect(() => {
