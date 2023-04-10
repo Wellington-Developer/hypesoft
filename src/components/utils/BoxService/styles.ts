@@ -18,7 +18,6 @@ export const Box = styled.div`
         width: 100%;
         max-width: 35px;
         max-height: 35px;
-        border: 1px solid red;
     }
 
     .info-side {
@@ -58,6 +57,10 @@ export const Box = styled.div`
                 font-weight: 600;
                 line-height: 24px;
                 text-transform: uppercase;
+            }
+
+            .svg {
+                stroke: red;
             }
         }
     }

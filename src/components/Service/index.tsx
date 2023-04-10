@@ -1,4 +1,6 @@
 import { BoxService } from "../utils/BoxService"
+
+// Styles
 import { TitleCenter } from "../utils/TitleCenter/styles"
 import { ServiceContainer } from "./styles"
 
@@ -9,10 +11,10 @@ export const Service = () => {
                 <h1>My Services</h1>
             </TitleCenter>
             <div className="box-container">
-                <BoxService text={"UI/UX Design"} link="UI Design"/>
-                <BoxService text={"Product Design"} link="UI Design"/>
-                <BoxService text={"Branding Design"} link="UI Design"/>
-                <BoxService text={"Front End Development"} link="UI Design"/>
+                <BoxService text={"UI/UX Design"} link="#design"/>
+                <BoxService text={"Product Design"} link="#product-design"/>
+                <BoxService text={"Branding Design"} link="#branding-design"/>
+                <BoxService text={"Front End Development"} link="#front-end"/>
             </div>
         </ServiceContainer>
     )

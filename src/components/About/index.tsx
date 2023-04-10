@@ -7,7 +7,7 @@ import { AboutContainer } from "./styles"
 
 // Assets
 import aboutImg from '../../../public/assets/images/about.png';
-import arrowRightImg from '../../../public/assets/icons/arrowRight.svg';
+import arrowRightImg from '../../../public/assets/icons/arrowRightBlack.svg';
 
 export const About = () => {
     return (
