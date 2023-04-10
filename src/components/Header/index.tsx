@@ -20,7 +20,11 @@ export const Header = () => {
                         Works
                     </Link>
                 </li>
-                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <Link to="contact" spy={true} smooth={true} offset={50} duration={500}>
+                        Contact
+                    </Link>
+                </li>
             </ul>
         </HeaderContainer>
     )

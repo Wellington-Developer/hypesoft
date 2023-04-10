@@ -9,6 +9,7 @@ import { Companies } from "./Companies"
 import { Banner } from "./Banner"
 import { Testimonial } from "./Testimonial"
 import { Contact } from "./Contact"
+import { Footer } from "./Footer"
 
 export const Main = () => {
     return (
@@ -23,6 +24,7 @@ export const Main = () => {
                 <Banner />
                 <Testimonial />
                 <Contact />
+                <Footer />
         </MainContainer>
     )
 }
