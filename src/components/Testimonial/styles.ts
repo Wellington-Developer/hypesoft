@@ -66,7 +66,8 @@ export const TestimonialContainer = styled.div `
             padding: 0 50px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            padding-top: 52px;
+            position: relative;
             
             h3 {
                 font-size: 3.2rem;
@@ -89,6 +90,12 @@ export const TestimonialContainer = styled.div `
             }
 
             background: var(--color-white);
+
+            .dual-quotes {
+                position: absolute;
+                right: 24px;
+                top: 24px;
+            }
         }
     }
 `
