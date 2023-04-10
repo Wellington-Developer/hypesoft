@@ -8,6 +8,7 @@ import { Work } from "./Work"
 import { Companies } from "./Companies"
 import { Banner } from "./Banner"
 import { Testimonial } from "./Testimonial"
+import { Contact } from "./Contact"
 
 export const Main = () => {
     return (
@@ -21,6 +22,7 @@ export const Main = () => {
                 <Companies />
                 <Banner />
                 <Testimonial />
+                <Contact />
         </MainContainer>
     )
 }
