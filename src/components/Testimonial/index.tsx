@@ -1,7 +1,27 @@
+import { useEffect, useState } from "react"
 import { TitleCenter } from "../utils/TitleCenter/styles"
 import { TestimonialContainer } from "./styles"
+import { EventType } from "@testing-library/react"
+import { TestimonialsProps } from "@/../types/components/data/testimonials"
 
 export const Testimonial = () => {
+
+    const [ testimonials, setTestimonials ] = useState([])
+    const [ indexTestimonial, setIndexTestimonial ] = useState('')
+
+    const fetchTestimonials = async () => {
+        const res = await fetch('/api/testimonials')
+        const testimonials: TestimonialsProps[] | any = await res.json()
+
+        setTestimonials(testimonials)
+        console.log(testimonials)
+    }
+
+
+    useEffect(() => {
+        fetchTestimonials()
+    }, [])
+    
     return (
         <TestimonialContainer className="container-default">
             <TitleCenter>
@@ -9,43 +29,25 @@ export const Testimonial = () => {
             </TitleCenter>
             <div className="testimonials-container">
                 <div className="persons">
-                    <div className="person">
-                        <div className="profile"></div>
-                        <div className="info">
-                            <h1>Sundar Pichai</h1>
-                            <p>CEO & Founder of <span>Google</span></p>
-                        </div>
-                    </div>
-
-                    <div className="person">
-                        <div className="profile"></div>
-                        <div className="info">
-                            <h1>Sundar Pichai</h1>
-                            <p>CEO & Founder of <span>Google</span></p>
-                        </div>
-                    </div>
-
-                    <div className="person">
-                        <div className="profile"></div>
-                        <div className="info">
-                            <h1>Sundar Pichai</h1>
-                            <p>CEO & Founder of <span>Google</span></p>
-                        </div>
-                    </div>
-
-                    <div className="person">
-                        <div className="profile"></div>
-                        <div className="info">
-                            <h1>Sundar Pichai</h1>
-                            <p>CEO & Founder of <span>Google</span></p>
-                        </div>
-                    </div>
+                    {
+                        testimonials.map((testimonial, index) => {
+                            return (
+                                <div className="person" key={index}>
+                                    <div className="profile"></div>
+                                    <div className="info">
+                                        <h1>{testimonial.name}</h1>
+                                        <p>{testimonial.work}</p>
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
                 </div>
-
                 <div className="testimonial">
-                    <h4 id="#rating">5.0 Star Rating</h4>
-                    <h3>“If you're looking for someone who will challenge your UX/UI thinking and really cut to the core of what's important for users, then Jesse is your man. On top of that, he brings a level of enthusiasm to the craft that's energizing for everyone who works with him.”</h3>
+                    <h4 id="#rating">5.0</h4>
+                    <h3>Comentário</h3>
                 </div>
+
             </div>
         </TestimonialContainer>
     )
