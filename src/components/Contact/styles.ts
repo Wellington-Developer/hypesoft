@@ -52,9 +52,8 @@ export const ContactContainer = styled.div`
     .right-side {
         ul {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
             padding-bottom: 50px;
+            align-items: center;
             
             li {
                 height: 20px;
