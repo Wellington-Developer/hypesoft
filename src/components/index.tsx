@@ -6,6 +6,7 @@ import { About } from "./About"
 import { Service } from "./Service"
 import { Work } from "./Work"
 import { Companies } from "./Companies"
+import { Banner } from "./Banner"
 
 export const Main = () => {
     return (
@@ -17,6 +18,7 @@ export const Main = () => {
                 <Service />
                 <Work />
                 <Companies />
+                <Banner />
         </MainContainer>
     )
 }
