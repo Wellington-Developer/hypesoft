@@ -68,6 +68,7 @@ export const TestimonialContainer = styled.div `
             flex-direction: column;
             padding-top: 52px;
             position: relative;
+            border-radius: 5px;
             
             h3 {
                 font-size: 3.2rem;
