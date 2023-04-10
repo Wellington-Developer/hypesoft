@@ -15,7 +15,6 @@ export const BoxWorkContainer = styled.div`
 
     .info-work {
         padding: 24px;
-        width: 100%;
         height: 120px;
 
         h1 {
@@ -31,6 +30,14 @@ export const BoxWorkContainer = styled.div`
             text-transform: uppercase;
             color: var(--color-pink);
             font-weight: 600;
+        }
+
+        .info {
+            display: flex;
+
+            img {
+                padding-left: 4px;
+            }
         }
     }
 `
