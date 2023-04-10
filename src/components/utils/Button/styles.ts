@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 export const Button = styled.a<ButtonProps >`
     display: inline-block;
+    width: auto;
     font-size: 1.6rem;
     text-transform: uppercase;
     font-weight: 600;
@@ -18,8 +19,9 @@ export const Button = styled.a<ButtonProps >`
         cursor: pointer;
     }
 
-    img {
-        display: inline-block;
-        padding-left: 8px;
+    svg {
+        padding-left: 10px;
+        height: 100%;
+        color: #fff;
     }
 `;
