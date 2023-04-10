@@ -31,7 +31,12 @@ export const TestimonialContainer = styled.div `
                     width: 52px;
                     height: 52px;
                     border-radius: 100%;
-                    background: var(--color-gray-500);
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 100%;
+                    }
                 }
 
                 .info {
@@ -75,6 +80,12 @@ export const TestimonialContainer = styled.div `
                 color: var(--color-bg);
                 padding-bottom: 26px;
                 font-weight: 400;
+                display: flex;
+                align-items: center;
+
+                svg {
+                    margin-right: 10px;
+                }
             }
 
             background: var(--color-white);

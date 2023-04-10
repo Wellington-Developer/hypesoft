@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react"
 import { TitleCenter } from "../utils/TitleCenter/styles"
 import { TestimonialContainer } from "./styles"
-import { EventType } from "@testing-library/react"
 import { TestimonialsProps } from "@/../types/components/data/testimonials"
+
+// Assets
+import { AiFillStar } from 'react-icons/ai'
 
 export const Testimonial = () => {
     const [ testimonials, setTestimonials ] = useState<TestimonialsProps[]>([])
@@ -39,7 +41,9 @@ export const Testimonial = () => {
                         testimonials.map((testimonial, index) => {
                             return (
                                 <div className="person" key={index} onClick={ () => getStateId(index) }>
-                                    <div className="profile"></div>
+                                    <div className="profile">
+                                        <img src={testimonial.image} alt="profile image" />
+                                    </div>
                                     <div className="info">
                                         <h1>{testimonial.name}</h1>
                                         <p>{testimonial.work}</p>
@@ -52,12 +56,13 @@ export const Testimonial = () => {
                 {
                     filteredTestimonial ? (
                         <div className="testimonial">
-                            <h4 id="#rating">{filteredTestimonial.rate} Star Rating</h4>
+                            <h4 id="#rating"><AiFillStar />{filteredTestimonial.rate} Star Rating</h4>
                             <h3>{filteredTestimonial.comment}</h3>
                         </div>
                     ) : (
                         <div className="testimonial">
-                            <h1>Clique para ver os comentários.</h1>
+                            <h4 id="#rating"><AiFillStar />5 Star Rating</h4>
+                            <h3>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is</h3>
                         </div>
                     )
                 }

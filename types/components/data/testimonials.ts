@@ -3,5 +3,6 @@ export type TestimonialsProps = {
     name: string,
     work: string,
     comment: string,
-    rate: number
+    rate: number,
+    image: string,
 }
