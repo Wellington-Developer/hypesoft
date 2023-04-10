@@ -10,6 +10,10 @@ export const Box = styled.div`
 
     :hover {
         cursor: pointer;
+    
+        * {
+            color: var(--color-pink);
+        }
     }
 
     .icon {
@@ -18,6 +22,10 @@ export const Box = styled.div`
         width: 100%;
         max-width: 35px;
         max-height: 35px;
+
+        svg {
+            color: #242424;
+        }
     }
 
     .info-side {
@@ -59,8 +67,8 @@ export const Box = styled.div`
                 text-transform: uppercase;
             }
 
-            .svg {
-                stroke: red;
+            svg {
+                color: #242424;
             }
         }
     }
