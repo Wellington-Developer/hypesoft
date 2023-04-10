@@ -35,8 +35,9 @@ export const BoxWorkContainer = styled.div`
         .info {
             display: flex;
 
-            img {
+            svg {
                 padding-left: 4px;
+                color: var(--color-pink);
             }
         }
     }
