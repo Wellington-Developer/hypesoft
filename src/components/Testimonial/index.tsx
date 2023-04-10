@@ -40,7 +40,7 @@ export const Testimonial = () => {
                     {
                         testimonials.map((testimonial, index) => {
                             return (
-                                <div className="person" key={index} onClick={ () => getStateId(index) }>
+                                <div className="person" key={index} onMouseEnter={ () => getStateId(index) }>
                                     <div className="profile">
                                         <img src={testimonial.image} alt="profile image" />
                                     </div>
