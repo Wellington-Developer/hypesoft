@@ -52,7 +52,7 @@ export const Testimonial = () => {
                 {
                     filteredTestimonial ? (
                         <div className="testimonial">
-                            <h4 id="#rating">{filteredTestimonial.rate}</h4>
+                            <h4 id="#rating">{filteredTestimonial.rate} Star Rating</h4>
                             <h3>{filteredTestimonial.comment}</h3>
                         </div>
                     ) : (
