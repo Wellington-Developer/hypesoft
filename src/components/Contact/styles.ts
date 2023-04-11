@@ -37,22 +37,22 @@ export const ContactContainer = styled.div`
             #message {
                 height: 150px;
             }
-
-            button {
-                display: block;
-            }
         }
 
         .info-person {
             display: flex;
             gap: 16px;
         }
+
+        .button {
+            margin-top: 32px;
+        }
     }
 
     .right-side {
         ul {
             display: flex;
-            padding-bottom: 50px;
+            padding-bottom: 20px;
             align-items: center;
             
             li {
@@ -63,6 +63,25 @@ export const ContactContainer = styled.div`
                 color: var(--color-bg);
                 display: flex;
                 gap: 10px;
+            }
+        }
+
+        .social-media {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 12px;
+
+            .box {
+                border-radius: 100%;
+                padding: 20px;
+                background: var(--color-white);
+                border: 1px solid var(--color-gray-100);
+                transition: all 0.3s ease-in-out;
+                cursor: pointer;
+
+                :hover {
+                    background: var(--color-purple);
+                }
             }
         }
     }
