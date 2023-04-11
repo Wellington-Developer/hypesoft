@@ -14,7 +14,7 @@ export const Intro = () => {
         <IntroContainer>
             <div className="left-side">
                 <h1>Hello, I’m Well, a <span>Software Engineer.</span></h1>
-                <p>Differentiated professional focused on delivering solutions to the customer, committed to the user experience, creating interfaces that led to a fantastic immersion.</p>
+                <p>Product Designer, UI/UX Designer, and developer based in Brazil. Over the past 17 years, as an art director and designer, I’ve worked with big companies and up-and-coming startups.</p>
                 <div className="buttons">
                     <Button href="#contact" primary>Hire me</Button>
                     <Button href="#works">View work</Button>
