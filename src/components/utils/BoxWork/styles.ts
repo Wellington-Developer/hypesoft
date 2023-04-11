@@ -9,8 +9,14 @@ export const BoxWorkContainer = styled.div`
     .img-work {
         height: 332px;
         width: 100%;
-        background: black;
+        width: 100%;
         border-radius: 6px 6px 0 0;
+        img {
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+            border-radius: 6px 6px 0 0;
+        }
     }
 
     .info-work {

@@ -8,6 +8,7 @@ import arrowRight from '../../../../public/assets/icons/arrowRightBlack.svg';
 
 export const BoxWork = ({ text, link, img }: BoxWorkProps) => {
     const [ isShown, setIsShow ] = useState(false);
+    console.log(img)
     return (
         <BoxWorkContainer
             onMouseEnter={() => setIsShow(true)}
@@ -16,7 +17,7 @@ export const BoxWork = ({ text, link, img }: BoxWorkProps) => {
             <div className="img-work">
                 {
                     img && (
-                        <Image src={ img } alt="image work" width={ 424 } height={ 332 }/>
+                        <img src={ img } />
                     )
                 }
             </div>
