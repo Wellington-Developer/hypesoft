@@ -16,7 +16,7 @@ export const About = () => {
             </div>
             <div className="right-side">
                 <h1>Software Engineer and Infrastructure specialist based in Brazil.</h1>
-                <p>Morbi quam velit, euismod in imperdiet vitae, elementum et elit. Nunc finibus, felis sit amet sollicitudin sollicitudin, nisi magna feugiat enim, in maximus urna enim ac tortor. Nunc in volutpat ipsum, molestie commodo odio. Quisque auctor nisi mi. Aenean venenatis sapien et interdum interdum.</p>
+                <p>My name is Wellington Santos and I'm from the North Coast of SP. My journey as a Front-End Developer started in 2017, when I started a technical course in Internet Systems at IFSP, which is where I got my start in the world of creating interfaces, which soon became a passion!</p>
                 <div className="container-experience">
                     <ExperienceData>
                         <h2>17+</h2>
