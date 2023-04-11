@@ -35,8 +35,8 @@ export const Contact = () => {
                 </svg>
 
                     <div className="text">
-                        <li>House #5, Street Number #98</li>
-                        <li>brasilia - 700000-000, Brasil</li>
+                        <li>Litoral Norte - SP</li>
+                        <li>São Sebastião - 11600315, Brasil</li>
                     </div>
                 </ul>
                 <ul>
@@ -48,8 +48,8 @@ export const Contact = () => {
 
 
                     <div className="text">
-                        <li>House #5, Street Number #98</li>
-                        <li>brasilia - 700000-000, Brasil</li>
+                        <li>wellsantosprofissional.dev@gmail.com</li>
+                        <li>wellingtonsantos.developer@gmail.com</li>
                     </div>
                 </ul>
                 <ul>
@@ -60,8 +60,8 @@ export const Contact = () => {
 
 
                     <div className="text">
-                        <li>House #5, Street Number #98</li>
-                        <li>brasilia - 700000-000, Brasil</li>
+                        <li>(012) 99657-221</li>
+                        <li>(012) 99608-8228</li>
                     </div>
                 </ul>
 
