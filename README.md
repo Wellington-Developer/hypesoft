@@ -1,6 +1,5 @@
 ![Badge](https://img.shields.io/badge/Hypesoft-teste-%237159c1?style=for-the-badge&logo=ghost)
 # Portfolio
-Obs: Como é um teste prático para avaliar se o candidato possúi os requisitos tecnicos,  fiz apenas alguns testes unitários para fins demonstrativos. Acredito que tenham um workflow do que deve ser testado na hora de criar componentes.
 
 <br/><br/>
 > # 🛠 Ferramentas usadas
