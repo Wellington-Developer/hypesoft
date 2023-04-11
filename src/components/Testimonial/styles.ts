@@ -99,4 +99,89 @@ export const TestimonialContainer = styled.div `
             }
         }
     }
+
+    @media screen and (max-width: 1000px) {
+        .testimonials-container {
+            grid-template-columns: 200px 1fr;
+            
+            .persons {
+                .person {
+                    .profile {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    
+    @media screen and (max-width: 900px) {
+        .testimonials-container {
+            display: grid;
+            grid-template-columns: 312px 1fr;
+            gap: 22px;
+
+            .testimonial {
+                h3 {
+                    font-size: 2.8rem;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 850px) {
+        .testimonials-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 22px;
+            width: 100%;
+
+            .persons {
+                width: 100%;
+                max-width: 100%;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            .info {
+                padding-left: 16px;
+                h1 {
+                    font-size: 1.8rem;
+                    line-height: 156%;
+                    color: var(--color-bg);
+                    font-weight: 400;
+                }
+
+                p {
+                    font-size: 1.4rem;
+                    line-height: 143%;
+                    color: var(--color-gray-500);
+
+                    span {
+                        color: var(--color-pink);
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .testimonial {
+                padding: 40px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 705px) {
+        .testimonials-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 22px;
+            width: 100%;
+
+            .persons {
+                width: 100%;
+                max-width: 100%;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
 `

@@ -67,9 +67,50 @@ export const ContactContainer = styled.div`
         }
 
         .social-media {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
+            display: flex;
             gap: 12px;
+
+            .box {
+                border-radius: 100%;
+                padding: 20px;
+                background: var(--color-white);
+                border: 1px solid var(--color-gray-100);
+                transition: all 0.3s ease-in-out;
+                cursor: pointer;
+
+                :hover {
+                    background: var(--color-purple);
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        grid-template-columns: 1fr;
+    }
+
+    @media screen and (max-width: 600px) {
+        .right-side {
+        ul {
+            display: flex;
+            padding-bottom: 10px;
+            align-items: center;
+            
+            li {
+                height: 20px;
+                font-size: 1.4rem;
+                line-height: 28px;
+                font-weight: 400;
+                color: var(--color-bg);
+                display: flex;
+                gap: 5px;
+            }
+        }
+
+        .social-media {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
 
             .box {
                 border-radius: 100%;

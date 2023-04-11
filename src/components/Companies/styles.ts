@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const CompaniesContainer = styled.div`
     display: grid;
     grid-template-columns: 360px 1fr 1fr 1fr 1fr 1fr;
-    gap: 24px;
+    gap: 14px;
     padding-top: 100px;
     padding-bottom: 169px;
 
@@ -28,5 +28,18 @@ export const CompaniesContainer = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    @media screen and (max-width: 1200px) {
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+    @media screen and (max-width: 995px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (max-width: 700px) {
+        grid-template-columns: 1fr;
     }
 `
