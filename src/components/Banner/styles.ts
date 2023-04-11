@@ -8,8 +8,17 @@ export const BannerContainer = styled.div `
     justify-content: center;
     flex-direction: column;
     margin-bottom: 220px;
-    background: black;
     border-radius: 5px;
+    position: relative;
+
+    .shapes-container {
+        position: absolute;
+        z-index: -2;
+
+        svg, img {
+            object-fit: cover;
+        }
+    }
 
     h1 {
         text-align: center;
