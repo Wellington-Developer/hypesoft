@@ -19,7 +19,6 @@ export const Work = () => {
         fetchProjects()
     }, [])
     
-    console.log(projects)
     return (
         <WorkContainer className="container-default" id="works">
             <TitleCenter>

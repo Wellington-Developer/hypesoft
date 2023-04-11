@@ -8,7 +8,6 @@ import arrowRight from '../../../../public/assets/icons/arrowRightBlack.svg';
 
 export const BoxWork = ({ text, link, img }: BoxWorkProps) => {
     const [ isShown, setIsShow ] = useState(false);
-    console.log(img)
     return (
         <BoxWorkContainer
             onMouseEnter={() => setIsShow(true)}
@@ -30,8 +29,8 @@ export const BoxWork = ({ text, link, img }: BoxWorkProps) => {
                         )
                     }
                     <svg width="36" height="20" viewBox="0 0 36 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M33 10.025H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M27.95 4.00012L34 10.0241L27.95 16.0491" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M33 10.025H3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M27.95 4.00012L34 10.0241L27.95 16.0491" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                 </div>
             </div>

@@ -18,7 +18,6 @@ export const Testimonial = () => {
     }
 
     const getStateId = (id: number) => {
-        console.log(id)
         setFilteredTestimonial(testimonials[id])
     }
 
