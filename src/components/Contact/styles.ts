@@ -126,4 +126,5 @@ export const ContactContainer = styled.div`
             }
         }
     }
+}
 `
